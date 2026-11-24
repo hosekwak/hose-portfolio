@@ -126,4 +126,5 @@ nav a[aria-current]::before{content:'>>> ';color:var(--red)}
   .title-block>div:nth-child(2){padding-left:16px}
   .title-block .tb-name{padding-left:16px}
   .case-hero{margin-inline:0;padding:16px 18px 26px}
+  .case-heading h2{font-stretch:100%;font-size:clamp(1.75rem,9vw,2.5rem);overflow-wrap:anywhere}
 }
