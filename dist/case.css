@@ -10,7 +10,7 @@
 .case-hero .back{display:inline-block;font-size:.875rem;text-decoration:underline;text-underline-offset:4px}
 .case-hero a:focus-visible{outline-color:#fff}
 .case-cat{margin:32px 0 8px;font-size:.875rem;font-weight:700}
-.case-hero h1{margin:0;font-size:clamp(2.25rem,4vw,3.75rem);line-height:1.15;letter-spacing:-.02em}
+.case-hero h1{margin:0;text-wrap:balance;font-size:clamp(2.25rem,4vw,3.75rem);line-height:1.15;letter-spacing:-.02em}
 .case-lead{margin:12px 0 0;max-width:36em;font-size:clamp(1.125rem,1.8vw,1.5rem);line-height:1.5;text-wrap:pretty}
 .case-hero.has-mascot{padding-right:200px}
 .aiops-hero-mascot{position:absolute;right:32px;bottom:28px;width:132px;height:auto;image-rendering:pixelated}
@@ -35,7 +35,10 @@
 .case-heading>span{font-family:var(--display);font-stretch:72%;font-weight:800;font-size:1.25rem;color:var(--accent);font-variant-numeric:tabular-nums}
 .case-heading h2{margin:0;font-family:var(--display);font-stretch:72%;font-weight:800;font-size:clamp(2rem,3.2vw,2.75rem);line-height:1}
 
-.case-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:28px 32px;margin-bottom:36px}
+.case-cards{display:grid;grid-template-columns:minmax(0,1fr);gap:0;margin-bottom:36px}
+.case-cards:not(.practice-cards):not(.learn-list)>.case-card{display:grid;grid-template-columns:minmax(180px,.32fr) minmax(0,1fr);gap:24px;padding:18px 0;border-top:1px solid var(--rule)}
+.case-cards:not(.practice-cards):not(.learn-list)>.case-card:first-child{border-top:3px solid var(--accent)}
+.case-cards:not(.practice-cards):not(.learn-list)>.case-card h3{margin:0}
 .case-card{min-width:0;padding-top:16px;border-top:3px solid var(--accent)}
 .case-card h3,.case-panel h3{margin:0 0 8px;font-size:1.1875rem;line-height:1.45}
 .case-card p,.case-panel p{margin:0;color:var(--graphite);line-height:1.8}
@@ -49,7 +52,7 @@
 .case-figure figcaption{margin-top:8px;font-size:.8125rem;line-height:1.5;color:var(--graphite)}
 @media (hover:hover){.case-figure a:hover{border-color:var(--ink)}}
 
-.practice-cards{grid-template-columns:minmax(0,1fr);gap:44px}
+.practice-cards{grid-template-columns:minmax(0,1fr);gap:44px;margin-top:44px}
 .practice-card{display:grid;grid-template-columns:minmax(220px,.4fr) minmax(0,.6fr);gap:32px;align-items:start}
 .aiops-practice-card.no-media{grid-template-columns:minmax(0,1fr)}
 .practice-media{min-width:0}
@@ -182,7 +185,7 @@
   .insight-arrow{justify-self:start;transform:rotate(90deg)}
   .observability-shots{grid-template-columns:minmax(0,1fr)}
   .observability-shots .case-figure img{height:auto;max-height:200px}
-  .learn-list .case-card{grid-template-columns:minmax(0,1fr);gap:6px}
+  .learn-list .case-card,.case-cards:not(.practice-cards):not(.learn-list)>.case-card{grid-template-columns:minmax(0,1fr);gap:6px}
   .case-panel{padding:20px}
   .vmware-compare-scroll{overflow:visible}
   .vmware-compare{table-layout:auto}
