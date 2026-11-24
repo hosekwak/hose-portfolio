@@ -17,7 +17,7 @@
 @media(max-width:850px){.load-test-insight{grid-template-columns:1fr}.load-test-insight .case-figure{max-width:680px}}
 
 /* Lighter surfaces, clean Korean wrapping, and transparent PNG diagram */
-.case-card,.case-panel,.case-evidence{background:#f8f8f6;border-color:#e7e7e2}.process-list li{background:#f4f4f1}.load-test-insight{grid-template-columns:minmax(0,.95fr) minmax(320px,1.05fr);background:#fafaf8;border-color:#e8e8e3}.load-test-copy h3{font-size:clamp(24px,2.5vw,34px);line-height:1.35;word-break:keep-all;overflow-wrap:normal}.load-test-copy p{line-height:1.85;word-break:keep-all;overflow-wrap:normal}.diagram-viewport{background:#111}.diagram-viewport img{background:transparent}
+.case-card,.case-panel,.case-evidence{background:#f8f8f6;border-color:#e7e7e2}.process-list li{background:#f4f4f1}.load-test-insight{grid-template-columns:minmax(0,.95fr) minmax(320px,1.05fr);background:#fafaf8;border-color:#e8e8e3}@media(max-width:850px){.load-test-insight{grid-template-columns:1fr;padding:20px}}.load-test-copy h3{font-size:clamp(24px,2.5vw,34px);line-height:1.35;word-break:keep-all;overflow-wrap:normal}.load-test-copy p{line-height:1.85;word-break:keep-all;overflow-wrap:normal}.diagram-viewport{background:#111}.diagram-viewport img{background:transparent}
 .architecture-static a{padding:10px;background:#fff;border:1px solid #ecece8}.architecture-static img{width:100%;height:auto}
 
 /* Natural wrapping for project introductions */
