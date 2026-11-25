@@ -43,3 +43,6 @@
 
 /* VMware comparison: stacked rows on narrow screens */
 @media(max-width:700px){.vmware-compare-scroll{overflow:visible}.vmware-compare{min-width:0;table-layout:auto}.vmware-compare thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.vmware-compare tbody,.vmware-compare tr,.vmware-compare th,.vmware-compare td{display:block;width:auto!important}.vmware-compare tr{padding:14px 0;border-bottom:1px solid #d8d8d2}.vmware-compare th,.vmware-compare td{padding:4px 0;border:0}.vmware-compare tbody th{font-size:16px}.vmware-compare td::before{content:attr(data-label);display:block;margin-top:6px;font-size:12px;font-weight:700;color:#555}}
+.case-study.info .practice-card{align-items:start}
+.case-study.info .practice-card .case-figure{width:100%;max-width:280px;justify-self:end}
+@media(max-width:700px){.case-study.info .practice-card .case-figure{justify-self:start;max-width:240px}}
