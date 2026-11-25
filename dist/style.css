@@ -7,3 +7,4 @@ html{color-scheme:light}body{background:#fff;color:#111}.skip{background:#111;co
 .credential-list{display:grid;gap:11px;margin:0 0 28px}.credential-list>div{display:flex;align-items:baseline;justify-content:flex-start;gap:9px}.credential-list span{font-size:14px}.credential-list time{flex:none;color:#555;font-size:12px;letter-spacing:.01em}
 .other-line{margin-top:96px}
 @media(max-width:700px){.other-line{margin-top:64px}}
+main:focus{outline:none}
