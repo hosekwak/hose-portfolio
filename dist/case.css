@@ -207,7 +207,7 @@
 /* Section numbers share the heading's face, size and weight. */
 .case-heading{align-items:baseline}
 .case-heading>span{display:inline;min-width:0;height:auto;padding:0;border-radius:0;background:none;font:inherit;font-size:clamp(1.875rem,3vw,2.75rem);line-height:1.15;font-weight:700;letter-spacing:-.02em;color:var(--on-surface);font-variant-numeric:tabular-nums}
-.aiops-highlight,.learn-orange-highlight{padding:0;background:none;font-weight:700;color:var(--on-surface)}
+.aiops-highlight,.learn-orange-highlight{padding:0;background:none;font-weight:inherit;color:inherit}
 .bar-track{background:var(--outline-variant)}
 .case-card{padding:28px}
 @media (max-width:599px){.case-card,.case-panel,.case-role,.load-test-insight{padding:20px}.case-hero,.aiops-hero{padding:24px 20px}}
