@@ -1,7 +1,7 @@
 /* Case study pages — rounded surface containers, Material 3 roles from style.css */
 
 /* Back links as tonal buttons */
-.back{display:inline-flex;align-items:center;gap:6px;min-height:40px;margin:0 0 16px;padding:0 16px;border-radius:var(--shape-full);background:var(--secondary-container);color:var(--on-secondary-container);font:var(--label-l) var(--font);font-weight:700;transition:background-color var(--dur-short) var(--ease-standard)}
+.back{display:inline-flex;align-items:center;gap:6px;min-height:var(--target);margin:0 0 16px;padding:0 16px;border-radius:var(--shape-full);background:var(--secondary-container);color:var(--on-secondary-container);font:var(--label-l) var(--font);font-weight:700;transition:background-color var(--dur-short) var(--ease-standard)}
 @media (hover:hover){.back:hover{background:color-mix(in srgb,var(--on-surface) var(--state-hover),var(--secondary-container))}}
 .back:active{background:color-mix(in srgb,var(--on-surface) var(--state-pressed),var(--secondary-container))}
 .case-end{margin:48px 0 0}
@@ -172,7 +172,7 @@
 
 /* External links as outlined buttons */
 .case-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.case-links a{display:inline-flex;align-items:center;min-height:40px;padding:0 20px;border:1px solid var(--outline);border-radius:var(--shape-full);background:none;color:var(--on-surface);font:var(--label-l) var(--font);font-weight:700;transition:background-color var(--dur-short) var(--ease-standard)}
+.case-links a{display:inline-flex;align-items:center;min-height:var(--target);padding:0 20px;border:1px solid var(--outline);border-radius:var(--shape-full);background:none;color:var(--on-surface);font:var(--label-l) var(--font);font-weight:700;transition:background-color var(--dur-short) var(--ease-standard)}
 @media (hover:hover){.case-links a:hover{background:color-mix(in srgb,var(--on-surface) var(--state-hover),transparent)}}
 
 @media (max-width:599px){
