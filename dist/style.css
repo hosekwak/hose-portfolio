@@ -42,7 +42,7 @@
   --title-l:1.1875rem/1.37;
   --headline-s:1.5rem/1.33;
   --headline-m:1.875rem/1.27;
-  --font:-apple-system,BlinkMacSystemFont,system-ui,'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif;
+  --font:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,system-ui,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
   /* Apple HIG: functional-layer glass, used only on the header */
   --glass:rgb(255 255 255 / .72);
   --glass-filter:saturate(180%) blur(20px);
@@ -166,7 +166,7 @@ footer{grid-area:footer;display:flex;flex-wrap:wrap;justify-content:space-betwee
 .entry p{margin:4px 0 0;font:var(--body-m) var(--font);color:var(--on-surface-variant)}
 .entry h3+p{color:var(--on-surface)}
 .credential-list{display:grid}
-.credential-list>div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:12px 0;border-top:1px solid var(--outline-variant)}
+.credential-list>div{font:var(--body-m) var(--font);display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:12px 0;border-top:1px solid var(--outline-variant)}
 .credential-list time{flex:none;font:var(--label-l) var(--font);color:var(--on-surface-variant);font-variant-numeric:tabular-nums}
 @media (max-width:599px){
   .about-top{grid-template-columns:minmax(0,1fr);padding:24px}
