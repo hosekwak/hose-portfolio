@@ -5,16 +5,16 @@
   /* Color roles */
   --surface:#FFFFFF;
   --surface-container-lowest:#FFFFFF;
-  --surface-container-low:#F5F5F2;
-  --surface-container:#EFEFEB;
-  --surface-container-high:#E8E8E3;
+  --surface-container-low:#F4F4F6;
+  --surface-container:#EEEEF1;
+  --surface-container-high:#E7E7EB;
   --on-surface:#1A1B1E;
   --on-surface-variant:#46474C;
   --outline:#76777C;
-  --outline-variant:#D9D9D4;
+  --outline-variant:#D9DADF;
   --primary:#1A1B1E;
   --on-primary:#FFFFFF;
-  --secondary-container:#E2E2DC;
+  --secondary-container:#E2E3E8;
   --on-secondary-container:#1A1B1E;
   --success:#1F6B43;
   --warning:#9A4B24;
@@ -47,6 +47,7 @@
   --glass:rgb(255 255 255 / .72);
   --glass-filter:saturate(180%) blur(20px);
   --target:44px;
+  --image-outline:rgb(0 0 0 / .1);
   --header-h:64px;
   /* Layout */
   --margin:16px;
@@ -182,7 +183,7 @@ footer{grid-area:footer;display:flex;flex-wrap:wrap;justify-content:space-betwee
 @media (prefers-reduced-transparency:reduce){:root{--glass:var(--surface);--glass-filter:none}}
 /* Increase Contrast: secondary text and hairlines move to full strength. */
 @media (prefers-contrast:more){
-  :root{--on-surface-variant:var(--on-surface);--outline-variant:var(--outline);--glass:var(--surface);--glass-filter:none;--surface-container-low:#EDEDE8}
+  :root{--on-surface-variant:var(--on-surface);--outline-variant:var(--outline);--glass:var(--surface);--glass-filter:none;--surface-container-low:#ECECF0}
   a:focus-visible,button:focus-visible{outline-width:3px}
 }
 /* Reduce Motion: no transitions or animated scrolling. */
@@ -196,3 +197,6 @@ footer{grid-area:footer;display:flex;flex-wrap:wrap;justify-content:space-betwee
    0 page: white. 1 container: white + hairline. Inside a container: text, hairlines, no fills.
    Controls: outlined = secondary, black filled = selected or primary. No grey fills. */
 .card-caption>span{background:none;border:1px solid var(--outline-variant)}
+.section-line h1{margin:0;font:inherit;letter-spacing:inherit}
+.entry.award{grid-template-columns:4.5rem minmax(0,1fr);column-gap:16px}
+@media (max-width:599px){.entry.award{grid-template-columns:minmax(0,1fr)}}

@@ -211,3 +211,9 @@
 .bar-track{background:var(--outline-variant)}
 .case-card{padding:28px}
 @media (max-width:599px){.case-card,.case-panel,.case-role,.load-test-insight{padding:20px}.case-hero,.aiops-hero{padding:24px 20px}}
+/* Concentric: 28px frame − 16px padding = 12px image corner. */
+.case-section>.case-figure img{border-radius:var(--shape-m)}
+/* Content images take a neutral 10% black outline, not a tinted border. */
+.case-figure img{outline:1px solid var(--image-outline);outline-offset:-1px}
+.case-panel .case-figure a,.case-card .case-figure a{border:0}
+.case-panel .case-figure img,.case-card .case-figure img{border-radius:var(--shape-m)}
