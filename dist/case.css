@@ -184,3 +184,18 @@
   .case-card{padding:20px}
   .case-section{margin-top:48px}
 }
+
+/* ---------- One layer of boxes ----------
+   Outer containers are white with a hairline border, like the project cards.
+   Anything inside them has no box of its own: hairlines and spacing do the grouping. */
+.case-hero,.aiops-hero,.case-role,.case-card,.case-panel,.insight-list,.load-test-insight,.facts>div,.aiops-focus-box{background:var(--surface);border:1px solid var(--outline-variant)}
+.aiops-hero .case-hero{border:0}
+.case-section>.case-figure{padding:0;background:none}
+.case-section>.case-figure a{padding:16px;border-radius:var(--shape-xl)}
+.case-panel .case-figure a,.case-card .case-figure a{padding:0;overflow:hidden;border-radius:var(--shape-m)}
+.case-num{display:block;min-width:0;height:auto;margin-bottom:8px;padding:0;background:none;color:var(--on-surface-variant);text-align:left}
+.insight-arrow{background:none}
+.service-group span{padding:10px 4px;border-radius:0;background:none;border-top:1px solid var(--outline-variant)}
+.service-group strong{border-radius:var(--shape-s)}
+.process-list li,.metric-strip div,.scenario-timeline li,.learn-stat{padding-left:0;padding-right:0;border-radius:0;background:none;border-top:1px solid var(--outline-variant)}
+.vmware-compare-scroll{background:none}

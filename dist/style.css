@@ -189,3 +189,5 @@ footer{grid-area:footer;display:flex;flex-wrap:wrap;justify-content:space-betwee
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 /* Windows High Contrast keeps its own colors. */
 @media (forced-colors:active){body>header{background:Canvas;backdrop-filter:none}.card,.case-card,.case-panel{border:1px solid CanvasText}}
+.about-top,.about-columns>section{background:var(--surface);border:1px solid var(--outline-variant)}
+@media (prefers-contrast:more){.card,.case-card,.case-panel,.case-hero,.case-role{border-color:var(--outline)}}
