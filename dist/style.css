@@ -219,3 +219,7 @@ footer{grid-area:footer;display:flex;flex-wrap:wrap;justify-content:space-betwee
 .card-caption .card-summary{min-height:calc(2 * 1.53em)}
 .about-top .links a[download]{background:none;color:var(--on-surface);border:1px solid var(--outline-variant)}
 @media (hover:hover){.about-top .links a[download]:hover{background:none;border-color:var(--on-surface)}}
+/* About buttons match the sidebar chips: white, hairline, grey on hover */
+.about-top .links a{background:none;color:var(--on-surface);border:1px solid var(--outline-variant)}
+@media (hover:hover){.about-top .links a:hover,.about-top .links a[download]:hover{background:color-mix(in srgb,var(--on-surface) var(--state-hover),transparent);border-color:var(--outline-variant);color:var(--on-surface)}}
+.about-top .links a:active{background:color-mix(in srgb,var(--on-surface) var(--state-pressed),transparent)}
