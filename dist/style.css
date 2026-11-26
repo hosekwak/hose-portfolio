@@ -230,3 +230,11 @@ footer{grid-area:footer;display:flex;flex-wrap:wrap;justify-content:space-betwee
 time{font-weight:400}
 /* 6. Sidebar links fit on one row */
 @media (min-width:840px){.aside-bottom{flex-wrap:nowrap;gap:6px}.aside-bottom a{padding:0 12px}}
+/* About: Experience and Certifications share one row height; Awards sits below Certifications */
+@media (min-width:1200px){
+  .about-columns{grid-template-areas:"exp cert" ". awards";align-items:stretch}
+  .about-columns>section:first-child{grid-area:exp}
+  .about-stack{display:contents}
+  .about-stack>section:first-child{grid-area:cert}
+  .about-stack>section:last-child{grid-area:awards;align-self:start}
+}
