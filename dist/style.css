@@ -253,3 +253,8 @@ h1,h2,h3{text-wrap:balance}
 /* Short labels: balance. Body copy: normal wrap (fills the line); tieLast() in app.js keeps the last two words together */
 figcaption,td,dd{text-wrap:balance}
 .entry p,.detail-intro,.case-card p,.case-panel p,.practice-copy p,.learn-statement,.learn-note,.muted,li{text-wrap:wrap}
+/* List cards: one border only, thumbnails in one 16:9 frame */
+.card .tag{border-bottom:0;padding-bottom:0}
+.card .card-caption{border-top:0}
+.poster img{aspect-ratio:16/9;height:auto;object-fit:contain}
+.poster img[src$="gangwon-thumb.png"]{object-fit:cover;object-position:top}
