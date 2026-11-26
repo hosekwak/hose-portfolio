@@ -244,3 +244,9 @@
 .case-num{font-weight:400}
 .insight-row>div>span{font-weight:400}
 .case-social a{font-weight:700}
+/* Bememory: screenshots get their own wide row under the two solution panels */
+.evidence-shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
+.evidence-shots .case-figure a{padding:12px}
+.evidence-shots .case-figure img{height:260px;width:100%;object-fit:contain}
+@media (max-width:839px){.evidence-shots{grid-template-columns:minmax(0,1fr)}.evidence-shots .case-figure img{height:auto;max-height:260px}}
+.case-panel>.case-num,.practice-copy>.case-num{display:block;margin-bottom:8px}
