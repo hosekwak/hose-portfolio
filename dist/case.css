@@ -318,8 +318,10 @@ h3>.case-num{display:inline;margin:0 12px 0 0;font:inherit;font-weight:400;color
 /* Readable measure for body copy in wide panels (matches .detail-intro) */
 .case-panel p,.observability-panel>p,.practice-copy p,.scenario-summary,.case-card p{max-width:46em}
 /* 강원의 길 */
-.case-study.gangwon .practice-card .case-figure{width:100%;max-width:200px;justify-self:start}
-@container (min-width:640px){.case-study.gangwon .practice-card{grid-template-columns:minmax(0,1fr) 200px}.case-study.gangwon .practice-card .case-figure{justify-self:end}}
+.case-study.gangwon .gw-media{display:flex;flex-wrap:wrap;gap:12px}
+.case-study.gangwon .gw-media .case-figure{width:200px;max-width:100%}
+.case-study.gangwon .practice-card.dual .gw-media .case-figure{width:180px;max-width:calc(50% - 6px)}
+@container (min-width:640px){.case-study.gangwon .practice-card{grid-template-columns:minmax(0,1fr) auto}}
 .case-study.gangwon .practice-copy p+p{margin-top:12px}
 .scope-note{color:var(--on-surface-variant);font:var(--label-l) var(--font);line-height:1.6}
 .role-line{margin:-4px 0 12px;color:var(--on-surface-variant)}
