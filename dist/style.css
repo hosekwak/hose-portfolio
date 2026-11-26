@@ -212,3 +212,8 @@ footer{grid-area:footer;display:flex;flex-wrap:wrap;justify-content:space-betwee
 .poster img{height:auto;aspect-ratio:4/3;margin:24px 0 20px}
 @media (max-width:599px){.poster img{height:auto;margin:20px 0 16px}}
 .card-caption .card-summary{margin:0;font:var(--body-m) var(--font);color:var(--on-surface-variant)}
+/* card caption: small project name + two-line summary slot */
+.tag{text-transform:uppercase}
+.card-caption>div{min-width:0}
+.card-caption .card-name{margin:0 0 4px;font:var(--body-l) var(--font);font-weight:600;color:var(--on-surface)}
+.card-caption .card-summary{min-height:calc(2 * 1.53em)}

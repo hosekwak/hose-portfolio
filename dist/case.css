@@ -217,3 +217,4 @@
 .case-figure img{outline:1px solid var(--image-outline);outline-offset:-1px}
 .case-panel .case-figure a,.case-card .case-figure a{border:0}
 .case-panel .case-figure img,.case-card .case-figure img{border-radius:var(--shape-m)}
+.case-hero .eyebrow{text-transform:uppercase}
