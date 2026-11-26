@@ -245,3 +245,4 @@ time{font-weight:400}
   .aside-bottom a{justify-content:space-between;width:100%;padding:0 20px;border:0;font-size:1rem}
   .aside-bottom a span{margin-left:0;color:var(--on-surface-variant)}
 }
+@media (min-width:840px){.aside-bottom a{font-size:.875rem}}
