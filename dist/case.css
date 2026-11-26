@@ -302,3 +302,12 @@ h3>.case-num{display:inline;margin:0 12px 0 0;font:inherit;font-weight:400;color
 /* Period stays on one line in the three-box row */
 .facts dd{white-space:nowrap}
 @media (min-width:600px) and (max-width:1199px){.facts dd{font-size:.9375rem}}
+/* Log flow: pills are spans; on phones the flow wraps with inline arrows */
+.log-flow li{border:0;padding:0;min-height:0}
+.log-flow li>span{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border:1px solid var(--outline-variant);border-radius:var(--shape-full)}
+@media (max-width:599px){
+  .log-flow{flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px}
+  .log-flow li+li::before{content:'→';position:static;transform:none;margin:0 8px 0 0;width:auto}
+  .log-flow li{display:inline-flex;align-items:center}
+}
+@media (max-width:599px){.log-flow li>span{min-height:32px;padding:0 10px;font-size:.8125rem}.log-flow{gap:6px}.log-flow li+li::before{margin-right:6px}}
