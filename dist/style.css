@@ -228,3 +228,5 @@ footer{grid-area:footer;display:flex;flex-wrap:wrap;justify-content:space-betwee
 /* Weight rules: 700 = headings, values, buttons. 400 = body, labels, numbers, dates. No 600. */
 .card-caption .card-name{font-weight:700}
 time{font-weight:400}
+/* 6. Sidebar links fit on one row */
+@media (min-width:840px){.aside-bottom{flex-wrap:nowrap;gap:6px}.aside-bottom a{padding:0 12px}}

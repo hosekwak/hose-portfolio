@@ -254,3 +254,17 @@
 @media (min-width:840px){.practice-card{grid-template-columns:minmax(0,1fr)}}
 .practice-cards{container-type:inline-size}
 @container (min-width:760px){.practice-card{grid-template-columns:minmax(220px,.42fr) minmax(0,.58fr)}}
+/* Review fixes */
+/* 1. Learn: number and title stacked at the top of the left column, aligned with the text */
+@media (min-width:840px){
+  .learn-list .case-card{grid-template-rows:auto 1fr;align-items:start}
+  .learn-list .case-card>.case-num{grid-column:1;grid-row:1;margin:0 0 8px}
+  .learn-list .case-card>h3{grid-column:1;grid-row:2;margin:0;align-self:start}
+  .learn-list .case-card>p,.learn-list .case-card>.vmware-learn-detail{grid-column:2;grid-row:1/span 2;margin:0}
+  .learn-list .vmware-comparison-card>.vmware-learn-detail{grid-column:1/-1;grid-row:3;margin-top:16px}
+}
+/* 3. Scenario summary: white with a strong left rule instead of a filled black box */
+.case-panel .scenario-summary{background:var(--surface);color:var(--on-surface);border:1px solid var(--outline-variant);border-left:3px solid var(--on-surface)}
+/* 4. Section headings one step below the page title */
+.case-heading h2,.case-heading>span{font-size:clamp(1.625rem,2.2vw,2rem)}
+.case-role .stack-chips{margin-top:20px;padding-top:16px;border-top:1px solid var(--outline-variant)}
