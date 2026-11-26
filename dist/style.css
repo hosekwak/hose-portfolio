@@ -206,3 +206,8 @@ footer{grid-area:footer;display:flex;flex-wrap:wrap;justify-content:space-betwee
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .about-stack .entry.award{grid-template-columns:4.5rem minmax(0,1fr);column-gap:16px}
 @media (max-width:599px){.about-stack .entry.award{grid-template-columns:minmax(0,1fr)}}
+/* Cards: number then category, no brand wordmark, larger diagram */
+.tag{justify-content:flex-start;gap:16px}
+.tag span:first-child{font-variant-numeric:tabular-nums}
+.poster img{height:auto;aspect-ratio:4/3;margin:24px 0 20px}
+@media (max-width:599px){.poster img{height:auto;margin:20px 0 16px}}
