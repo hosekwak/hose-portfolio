@@ -198,5 +198,8 @@ footer{grid-area:footer;display:flex;flex-wrap:wrap;justify-content:space-betwee
    Controls: outlined = secondary, black filled = selected or primary. No grey fills. */
 .card-caption>span{background:none;border:1px solid var(--outline-variant)}
 .section-line h1{margin:0;font:inherit;letter-spacing:inherit}
-.entry.award{grid-template-columns:4.5rem minmax(0,1fr);column-gap:16px}
+
 @media (max-width:599px){.entry.award{grid-template-columns:minmax(0,1fr)}}
+.about-stack{display:grid;gap:24px;min-width:0}
+.about-stack>section{padding:28px;border-radius:var(--shape-xl);background:var(--surface);border:1px solid var(--outline-variant)}
+@media (max-width:599px){.about-stack>section{padding:20px}}
