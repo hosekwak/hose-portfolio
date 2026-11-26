@@ -311,3 +311,9 @@ h3>.case-num{display:inline;margin:0 12px 0 0;font:inherit;font-weight:400;color
   .log-flow li{display:inline-flex;align-items:center}
 }
 @media (max-width:599px){.log-flow li>span{min-height:32px;padding:0 10px;font-size:.8125rem}.log-flow{gap:6px}.log-flow li+li::before{margin-right:6px}}
+/* Evidence pairs: equal frame heights so captions line up */
+.evidence-shots{align-items:stretch}
+.evidence-shots .case-figure{display:grid;grid-template-rows:1fr auto;margin:0}
+.evidence-shots .case-figure a{display:flex;align-items:center;justify-content:center}
+/* Readable measure for body copy in wide panels (matches .detail-intro) */
+.case-panel p,.observability-panel>p,.practice-copy p,.scenario-summary,.case-card p{max-width:46em}
