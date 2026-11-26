@@ -268,3 +268,12 @@
 /* 4. Section headings one step below the page title */
 .case-heading h2,.case-heading>span{font-size:clamp(1.625rem,2.2vw,2rem)}
 .case-role .stack-chips{margin-top:20px;padding-top:16px;border-top:1px solid var(--outline-variant)}
+/* Bememory: each solution is a full-width card; screenshots sit inside 02 where they belong */
+.case-study.bememory .evidence-grid{grid-template-columns:minmax(0,1fr)}
+.observability-panel .evidence-shots{margin-top:20px}
+.observability-panel .evidence-shots .case-figure img{height:300px}
+@media (max-width:839px){.observability-panel .evidence-shots .case-figure img{height:auto;max-height:260px}}
+@media (min-width:1200px){.case-study.bememory .evidence-grid>.case-panel:first-child{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:40px;align-items:start}
+.case-study.bememory .evidence-grid>.case-panel:first-child>*{grid-column:1}
+.case-study.bememory .evidence-grid>.case-panel:first-child>.comparison{grid-column:2;grid-row:1/span 4;align-self:center;margin:0}}
+.observability-panel .evidence-shots .case-figure img{height:auto;max-height:300px}
