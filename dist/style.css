@@ -203,3 +203,6 @@ footer{grid-area:footer;display:flex;flex-wrap:wrap;justify-content:space-betwee
 .about-stack{display:grid;gap:24px;min-width:0}
 .about-stack>section{padding:28px;border-radius:var(--shape-xl);background:var(--surface);border:1px solid var(--outline-variant)}
 @media (max-width:599px){.about-stack>section{padding:20px}}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.about-stack .entry.award{grid-template-columns:4.5rem minmax(0,1fr);column-gap:16px}
+@media (max-width:599px){.about-stack .entry.award{grid-template-columns:minmax(0,1fr)}}
