@@ -238,3 +238,10 @@ time{font-weight:400}
   .about-stack>section:first-child{grid-area:cert}
   .about-stack>section:last-child{grid-area:awards;align-self:start}
 }
+/* Sidebar links: a vertical list aligned with the menu, arrow pinned right */
+.aside-bottom a span{margin-left:6px}
+@media (min-width:840px){
+  .aside-bottom{flex-direction:column;flex-wrap:nowrap;gap:2px;margin-top:8px;padding-top:12px;border-top:1px solid var(--outline-variant)}
+  .aside-bottom a{justify-content:space-between;width:100%;padding:0 20px;border:0;font-size:1rem}
+  .aside-bottom a span{margin-left:0;color:var(--on-surface-variant)}
+}
