@@ -230,3 +230,11 @@
   .facts>div+div{border-top:1px solid var(--outline-variant)}
   .facts dd{margin:0;text-align:right}
 }
+/* SNS solutions: three columns, each with its screen underneath */
+.sns-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.sns-item{display:flex;flex-direction:column;min-width:0}
+.sns-item p{margin-bottom:16px}
+.sns-item .case-figure{margin-top:auto}
+.sns-item .case-figure img{max-height:520px;width:auto;max-width:100%;margin:0 auto;display:block}
+@media (max-width:839px){.sns-grid{grid-template-columns:minmax(0,1fr)}.sns-item .case-figure img{max-height:460px}}
+.sns-item figcaption{text-align:center}
