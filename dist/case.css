@@ -241,3 +241,6 @@
 /* three columns only when the card is wide enough for readable lines */
 .sns-solutions{container-type:inline-size}
 @container (max-width:859px){.sns-grid{grid-template-columns:minmax(0,1fr)}.sns-item .case-figure img{max-height:460px}}
+.case-num{font-weight:400}
+.insight-row>div>span{font-weight:400}
+.case-social a{font-weight:700}

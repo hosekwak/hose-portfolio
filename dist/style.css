@@ -225,3 +225,6 @@ footer{grid-area:footer;display:flex;flex-wrap:wrap;justify-content:space-betwee
 .about-top .links a:active{background:color-mix(in srgb,var(--on-surface) var(--state-pressed),transparent)}
 .caps{text-transform:uppercase}
 .section-line{margin:0}
+/* Weight rules: 700 = headings, values, buttons. 400 = body, labels, numbers, dates. No 600. */
+.card-caption .card-name{font-weight:700}
+time{font-weight:400}
