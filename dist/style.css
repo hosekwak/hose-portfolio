@@ -246,3 +246,9 @@ time{font-weight:400}
   .aside-bottom a span{margin-left:0;color:var(--on-surface-variant)}
 }
 @media (min-width:840px){.aside-bottom a{font-size:.875rem}}
+/* Korean line breaking: never split a word, and avoid a lone word on the last line */
+body{word-break:keep-all;overflow-wrap:break-word}
+p,li,dd,td,figcaption,blockquote,.card-summary,.learn-note,.learn-statement,.learn-context{text-wrap:pretty}
+h1,h2,h3{text-wrap:balance}
+/* Short blocks (up to a few lines): balance the lines so none is left with one word */
+li,figcaption,td,dd,.entry p,.card-summary,.detail-intro,.case-card p,.case-panel p,.practice-copy p,.learn-statement,.learn-note,.muted{text-wrap:balance}
