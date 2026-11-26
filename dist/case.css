@@ -296,3 +296,9 @@ h3>.case-num{display:inline;margin:0 12px 0 0;font:inherit;font-weight:400;color
 .log-flow-label{flex:none;width:40px;font:var(--label-l) var(--font);color:var(--on-surface-variant)}
 .log-flows .log-flow{margin:0}
 @media (max-width:599px){.log-flow-row{align-items:flex-start;flex-direction:column;gap:10px}}
+/* Observability screenshots: side by side only when the card is wide */
+.observability-panel{container-type:inline-size}
+@container (max-width:759px){.observability-panel .evidence-shots{grid-template-columns:minmax(0,1fr)}.observability-panel .evidence-shots .case-figure img{max-height:300px}}
+/* Period stays on one line in the three-box row */
+.facts dd{white-space:nowrap}
+@media (min-width:600px) and (max-width:1199px){.facts dd{font-size:.9375rem}}
