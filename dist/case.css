@@ -317,3 +317,18 @@ h3>.case-num{display:inline;margin:0 12px 0 0;font:inherit;font-weight:400;color
 .evidence-shots .case-figure a{display:flex;align-items:center;justify-content:center}
 /* Readable measure for body copy in wide panels (matches .detail-intro) */
 .case-panel p,.observability-panel>p,.practice-copy p,.scenario-summary,.case-card p{max-width:46em}
+/* 강원의 길 */
+.case-study.gangwon .practice-card .case-figure{width:100%;max-width:200px;justify-self:start}
+@container (min-width:640px){.case-study.gangwon .practice-card{grid-template-columns:minmax(0,1fr) 200px}.case-study.gangwon .practice-card .case-figure{justify-self:end}}
+.case-study.gangwon .practice-copy p+p{margin-top:12px}
+.scope-note{color:var(--on-surface-variant);font:var(--label-l) var(--font);line-height:1.6}
+.role-line{margin:-4px 0 12px;color:var(--on-surface-variant)}
+.section-lead{margin:0 0 16px;max-width:46em;color:var(--on-surface-variant);line-height:1.8}
+.privacy-compare .case-card,.privacy-steps .case-card{display:block}
+.privacy-compare h3,.privacy-steps h3{margin:0 0 12px}
+.privacy-compare ul{margin:0;padding-left:1.2em;line-height:1.7}
+.privacy-compare li+li{margin-top:6px}
+.privacy-steps{margin-top:12px}
+.case-cards.privacy-steps{grid-template-columns:repeat(auto-fit,minmax(min(360px,100%),1fr))}
+.privacy-why{margin-top:12px;display:block}
+.privacy-why p{margin:0;line-height:1.8}
