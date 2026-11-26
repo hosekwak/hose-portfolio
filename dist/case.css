@@ -222,3 +222,4 @@
 .case-social a{display:inline-flex;align-items:center;gap:8px;min-height:var(--target);padding:0 18px 0 14px;border:1px solid var(--outline-variant);border-radius:var(--shape-full);font:var(--label-l) var(--font);font-weight:600;color:var(--on-surface);text-decoration:none}
 @media (hover:hover){.case-social a:hover{background:color-mix(in srgb,var(--on-surface) var(--state-hover),transparent)}}
 .case-social a:active{background:color-mix(in srgb,var(--on-surface) var(--state-pressed),transparent)}
+.case-social{display:flex;flex-wrap:wrap;gap:8px}

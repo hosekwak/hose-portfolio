@@ -223,3 +223,4 @@ footer{grid-area:footer;display:flex;flex-wrap:wrap;justify-content:space-betwee
 .about-top .links a{background:none;color:var(--on-surface);border:1px solid var(--outline-variant)}
 @media (hover:hover){.about-top .links a:hover,.about-top .links a[download]:hover{background:color-mix(in srgb,var(--on-surface) var(--state-hover),transparent);border-color:var(--outline-variant);color:var(--on-surface)}}
 .about-top .links a:active{background:color-mix(in srgb,var(--on-surface) var(--state-pressed),transparent)}
+.caps{text-transform:uppercase}
