@@ -331,6 +331,6 @@ h3>.case-num{display:inline;margin:0 12px 0 0;font:inherit;font-weight:400;color
 .privacy-compare ul{margin:0;padding-left:1.2em;line-height:1.7}
 .privacy-compare li+li{margin-top:6px}
 .privacy-steps{margin-top:12px}
-.case-cards.privacy-steps{grid-template-columns:repeat(auto-fit,minmax(min(360px,100%),1fr))}
+.case-cards.privacy-steps{grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr))}
 .privacy-why{margin-top:12px;display:block}
 .privacy-why p{margin:0;line-height:1.8}
