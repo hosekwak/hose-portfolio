@@ -238,3 +238,6 @@
 .sns-item .case-figure img{max-height:520px;width:auto;max-width:100%;margin:0 auto;display:block}
 @media (max-width:839px){.sns-grid{grid-template-columns:minmax(0,1fr)}.sns-item .case-figure img{max-height:460px}}
 .sns-item figcaption{text-align:center}
+/* three columns only when the card is wide enough for readable lines */
+.sns-solutions{container-type:inline-size}
+@container (max-width:859px){.sns-grid{grid-template-columns:minmax(0,1fr)}.sns-item .case-figure img{max-height:460px}}
