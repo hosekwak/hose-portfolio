@@ -223,3 +223,10 @@
 @media (hover:hover){.case-social a:hover{background:color-mix(in srgb,var(--on-surface) var(--state-hover),transparent)}}
 .case-social a:active{background:color-mix(in srgb,var(--on-surface) var(--state-pressed),transparent)}
 .case-social{display:flex;flex-wrap:wrap;gap:8px}
+/* Phones: period / organization / team share one box as rows */
+@media (max-width:599px){
+  .facts{gap:0;border:1px solid var(--outline-variant);border-radius:var(--shape-l);overflow:hidden}
+  .facts>div{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:12px 16px;border:0;border-radius:0}
+  .facts>div+div{border-top:1px solid var(--outline-variant)}
+  .facts dd{margin:0;text-align:right}
+}
