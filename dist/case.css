@@ -291,3 +291,8 @@ h3>.case-num{display:inline;margin:0 12px 0 0;font:inherit;font-weight:400;color
 .log-flow li+li{margin-left:0}
 .log-flow li+li::before{position:absolute;left:-21px;top:50%;transform:translateY(-50%);margin:0;width:auto}
 @media (max-width:599px){.log-flow{flex-direction:column;align-items:flex-start;gap:22px}.log-flow li+li::before{content:'↓';left:16px;top:-20px;transform:none}}
+.log-flows{display:grid;gap:12px;margin:16px 0}
+.log-flow-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.log-flow-label{flex:none;width:40px;font:var(--label-l) var(--font);color:var(--on-surface-variant)}
+.log-flows .log-flow{margin:0}
+@media (max-width:599px){.log-flow-row{align-items:flex-start;flex-direction:column;gap:10px}}
