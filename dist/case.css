@@ -277,3 +277,17 @@
 .case-study.bememory .evidence-grid>.case-panel:first-child>*{grid-column:1}
 .case-study.bememory .evidence-grid>.case-panel:first-child>.comparison{grid-column:2;grid-row:1/span 4;align-self:center;margin:0}}
 .observability-panel .evidence-shots .case-figure img{height:auto;max-height:300px}
+/* Number sits beside its title */
+h3>.case-num{display:inline;margin:0 12px 0 0;font:inherit;font-weight:400;color:var(--on-surface-variant);font-variant-numeric:tabular-nums}
+@media (min-width:840px){.learn-list .case-card>h3{grid-row:1/span 2}}
+/* Bememory log flow: what goes where, left to right */
+.log-flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px 0;margin:16px 0 0;padding:0;list-style:none}
+.log-flow li{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border:1px solid var(--outline-variant);border-radius:var(--shape-full);font:var(--label-l) var(--font)}
+.log-flow li+li::before{content:'→';margin:0 10px 0 -4px;color:var(--on-surface-variant);position:relative;left:-14px;width:0}
+.log-flow li+li{margin-left:28px}
+.learn-list h3>.case-num,.case-card h3>.case-num,.case-panel h3>.case-num{margin:0 12px 0 0}
+.log-flow{gap:8px 28px;margin:16px 0}
+.log-flow li{position:relative}
+.log-flow li+li{margin-left:0}
+.log-flow li+li::before{position:absolute;left:-21px;top:50%;transform:translateY(-50%);margin:0;width:auto}
+@media (max-width:599px){.log-flow{flex-direction:column;align-items:flex-start;gap:22px}.log-flow li+li::before{content:'↓';left:16px;top:-20px;transform:none}}
