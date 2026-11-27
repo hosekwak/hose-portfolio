@@ -270,3 +270,5 @@ footer{display:block}
 }
 @media (max-width:839px) and (hover:hover){.footer-links a:hover{background:color-mix(in srgb,var(--on-surface) var(--state-hover),transparent);color:var(--on-surface)}}
 .footer-links a:active{background:color-mix(in srgb,var(--on-surface) var(--state-pressed),transparent)}
+main img{height:auto}
+main{min-height:calc(100dvh - var(--header-h))}
