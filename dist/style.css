@@ -258,3 +258,15 @@ figcaption,td,dd{text-wrap:balance}
 .card .card-caption{border-top:0}
 .poster img{aspect-ratio:16/9;height:auto;object-fit:contain}
 .poster img[src$="gangwon-thumb.png"]{object-fit:cover;object-position:top}
+/* Phone: contact links live in the footer, not above every page */
+footer{display:block}
+.footer-meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;margin:0}
+.footer-links{display:none}
+@media (max-width:839px){
+  .aside-bottom{display:none}
+  .footer-links{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+  .footer-links a{display:inline-flex;align-items:center;min-height:var(--target);padding:0 16px;border:1px solid var(--outline-variant);border-radius:var(--shape-full);font:var(--label-l) var(--font);font-weight:700;letter-spacing:0;color:var(--on-surface-variant)}
+  .footer-links a span{margin-left:6px}
+}
+@media (max-width:839px) and (hover:hover){.footer-links a:hover{background:color-mix(in srgb,var(--on-surface) var(--state-hover),transparent);color:var(--on-surface)}}
+.footer-links a:active{background:color-mix(in srgb,var(--on-surface) var(--state-pressed),transparent)}
