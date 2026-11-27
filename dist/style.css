@@ -272,3 +272,19 @@ footer{display:block}
 .footer-links a:active{background:color-mix(in srgb,var(--on-surface) var(--state-pressed),transparent)}
 main img{height:auto}
 main{min-height:calc(100dvh - var(--header-h))}
+/* Accent: one color for links, arrow buttons and the current menu */
+:root{--accent:#2563EB;--on-accent:#FFFFFF;--shape-xl:16px}
+nav a[aria-current]{background:var(--accent);color:var(--on-accent)}
+nav a[aria-current] span{color:var(--on-accent)}
+@media (hover:hover){nav a[aria-current]:hover{background:color-mix(in srgb,#000 12%,var(--accent));color:var(--on-accent)}}
+.card-caption>span{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
+@media (hover:hover){.card:hover{border-color:var(--accent)}.card:hover .card-caption>span{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}}
+.aside-bottom a span,.footer-links a span{color:var(--accent)}
+.case-social a,.back{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
+.case-social a span{color:var(--accent)}
+.detail-intro a,.case-card a:not(.case-figure a),.entry a{color:var(--accent)}
+:focus-visible{outline-color:var(--accent)}
+/* Motion: a short fade when the page changes */
+@keyframes page-in{from{opacity:0}to{opacity:1}}
+main.page-in{animation:page-in 180ms var(--ease-standard,ease-out)}
+@media (prefers-reduced-motion:reduce){main.page-in{animation:none}}
