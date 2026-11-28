@@ -19,3 +19,7 @@ document.fonts&&document.fonts.ready.then(()=>sentenceBreaks(main));
 
 function syncAsideBack(){const on=document.body.classList.contains('is-detail')&&window.scrollY>160;document.body.classList.toggle('is-scrolled',on);document.querySelectorAll('.local-nav a').forEach(a=>{if(on)a.removeAttribute('tabindex');else a.setAttribute('tabindex','-1')});}
 window.addEventListener('scroll',syncAsideBack,{passive:true});window.addEventListener('hashchange',()=>setTimeout(syncAsideBack,0));syncAsideBack();
+
+(function buildMega(){const fill=(g,list,title)=>{const el=document.querySelector('.mega[data-group="'+g+'"]');if(!el)return;el.innerHTML='<div class="mega-inner"><p class="mega-title">'+title+'</p><ul>'+list.map((p,i)=>'<li><a href="#project/'+p.id+'"><span class="mega-cat">'+String(i+1).padStart(2,'0')+' · '+p.category+'</span><span class="mega-name">'+p.name+'</span></a></li>').join('')+'</ul></div>'};fill('main',projects,'Project');fill('other',otherProjects,'Other Project')})();
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&document.activeElement&&document.activeElement.closest('.top-item'))document.activeElement.blur()});
+document.addEventListener('click',e=>{const a=e.target.closest('.mega a');if(a){a.blur();const it=a.closest('.top-item');it.classList.add('mega-closed');it.addEventListener('mouseleave',()=>it.classList.remove('mega-closed'),{once:true})}});
