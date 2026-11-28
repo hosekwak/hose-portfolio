@@ -289,3 +289,15 @@ main.page-in{animation:page-in 180ms var(--ease-standard,ease-out)}
 /* Certifications: date first, like Experience and Awards */
 .credential-list>div{display:grid;grid-template-columns:5.5rem minmax(0,1fr);column-gap:16px;justify-content:start}
 .credential-list time{order:-1}
+/* Detail pages on wide screens: sidebar gives way to a single back button on scroll */
+.aside-back{display:none}
+@media (min-width:840px){
+  aside{position:sticky}
+  .aside-back{display:inline-flex;align-items:center;position:absolute;top:24px;left:0;min-height:var(--target);padding:0 16px;border:1px solid var(--outline-variant);border-radius:var(--shape-full);background:var(--surface);color:var(--on-surface);font:var(--label-l) var(--font);font-weight:700;opacity:0;visibility:hidden;transform:translateY(4px);transition:opacity 200ms ease,transform 200ms ease,visibility 0s linear 200ms}
+  aside>nav,aside>.aside-bottom{transition:opacity 200ms ease,transform 200ms ease,visibility 0s linear 0s}
+  body.is-detail.is-scrolled aside>nav,body.is-detail.is-scrolled aside>.aside-bottom{opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity 200ms ease,transform 200ms ease,visibility 0s linear 200ms}
+  body.is-detail.is-scrolled .aside-back{opacity:1;visibility:visible;transform:none;transition:opacity 200ms ease,transform 200ms ease,visibility 0s}
+  body.is-detail main a.back{display:none}
+}
+@media (min-width:840px) and (hover:hover){.aside-back:hover{background:color-mix(in srgb,var(--on-surface) var(--state-hover),transparent)}}
+@media (prefers-reduced-motion:reduce){.aside-back,aside>nav,aside>.aside-bottom{transition:none!important}}
