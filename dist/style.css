@@ -301,3 +301,11 @@ main.page-in{animation:page-in 180ms var(--ease-standard,ease-out)}
 }
 @media (min-width:840px) and (hover:hover){.aside-back:hover{background:color-mix(in srgb,var(--on-surface) var(--state-hover),transparent)}}
 @media (prefers-reduced-motion:reduce){.aside-back,aside>nav,aside>.aside-bottom{transition:none!important}}
+/* Slower, visible fade for the sidebar hand-off */
+@media (min-width:840px){
+  aside>nav,aside>.aside-bottom{transition:opacity 450ms ease,transform 450ms ease,filter 450ms ease,visibility 0s linear 0s}
+  body.is-detail.is-scrolled aside>nav,body.is-detail.is-scrolled aside>.aside-bottom{filter:blur(3px);transform:translateY(-10px);transition:opacity 450ms ease,transform 450ms ease,filter 450ms ease,visibility 0s linear 450ms}
+  body.is-detail.is-scrolled aside>.aside-bottom{transition-delay:60ms,60ms,60ms,510ms}
+  .aside-back{transform:translateY(8px);transition:opacity 400ms ease,transform 400ms ease,visibility 0s linear 400ms}
+  body.is-detail.is-scrolled .aside-back{transition:opacity 400ms ease 200ms,transform 400ms ease 200ms,visibility 0s}
+}
