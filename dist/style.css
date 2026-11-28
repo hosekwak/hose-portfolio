@@ -285,3 +285,4 @@ main.page-in{animation:page-in 180ms var(--ease-standard,ease-out)}
   .about-columns{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);grid-template-areas:"cert exp" "awards exp"}
   .about-stack>section:last-child{align-self:stretch}
 }
+@media (min-width:1200px){.about-columns>section:first-child{align-self:start}}
