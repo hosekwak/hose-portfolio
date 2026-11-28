@@ -286,3 +286,6 @@ main.page-in{animation:page-in 180ms var(--ease-standard,ease-out)}
   .about-stack>section:last-child{align-self:stretch}
 }
 @media (min-width:1200px){.about-columns>section:first-child{align-self:start}}
+/* Certifications: date first, like Experience and Awards */
+.credential-list>div{display:grid;grid-template-columns:5.5rem minmax(0,1fr);column-gap:16px;justify-content:start}
+.credential-list time{order:-1}
