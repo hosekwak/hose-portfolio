@@ -280,3 +280,8 @@ main.page-in{animation:page-in 180ms var(--ease-standard,ease-out)}
 @media (prefers-reduced-motion:reduce){main.page-in{animation:none}}
 /* Modern trim: no all-caps tracked labels */
 .caps,.eyebrow,.tag,.facts dt,footer,.footer-meta{text-transform:none;letter-spacing:0}
+/* About: certifications + awards on the left, experience on the right */
+@media (min-width:1200px){
+  .about-columns{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);grid-template-areas:"cert exp" "awards exp"}
+  .about-stack>section:last-child{align-self:stretch}
+}
