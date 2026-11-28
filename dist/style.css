@@ -423,3 +423,10 @@ body::after{content:none!important}
 @media (min-width:1200px){.about-columns>section:first-child{align-self:stretch}}
 .about-stack .entry.award{grid-template-columns:5.5rem minmax(0,1fr);column-gap:16px}
 @media (max-width:599px){.about-stack .entry.award{grid-template-columns:minmax(0,1fr)}}
+
+/* Experience: 상자를 늘리는 대신 항목 간격을 벌려 왼쪽과 끝선 맞춤 */
+@media (min-width:1200px){
+  .about-columns>section:first-child{display:flex;flex-direction:column;justify-content:space-between}
+  .about-columns>section:first-child{justify-content:flex-start}
+  .about-columns>section:first-child>.entry+.entry{margin-top:auto}
+}
