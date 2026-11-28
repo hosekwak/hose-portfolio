@@ -417,3 +417,4 @@ body.header-hidden>header{transform:translateY(-100%)}
 /* 상단바 미리보기 제거 */
 .mega{display:none!important}
 body::after{content:none!important}
+.about-top .links a .pdf-icon{flex:none;margin:-2px 8px 0 -4px}
