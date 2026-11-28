@@ -418,3 +418,8 @@ body.header-hidden>header{transform:translateY(-100%)}
 .mega{display:none!important}
 body::after{content:none!important}
 .about-top .links a .pdf-icon{flex:none;margin:-2px 8px 0 -4px}
+
+/* About 상자 정렬: 오른쪽 Experience를 왼쪽 두 상자 높이에 맞추고, Awards 날짜 열을 Certifications와 같게 */
+@media (min-width:1200px){.about-columns>section:first-child{align-self:stretch}}
+.about-stack .entry.award{grid-template-columns:5.5rem minmax(0,1fr);column-gap:16px}
+@media (max-width:599px){.about-stack .entry.award{grid-template-columns:minmax(0,1fr)}}
