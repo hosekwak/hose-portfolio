@@ -344,3 +344,9 @@ h3>.case-num{display:inline;margin:0 12px 0 0;font:inherit;font-weight:400;color
 .detail .aiops-hero{border:0;background:none;padding-left:0;padding-right:0;padding-top:8px}
 .detail .aiops-focus-box{border:0;border-left:2px solid var(--on-surface);border-radius:0;background:none;padding:4px 0 4px 20px;margin-top:20px}
 .detail .eyebrow,.case-hero .eyebrow,.aiops-hero .eyebrow{text-transform:none;letter-spacing:0}
+/* Facts: one row per item, label then value */
+.detail .facts{grid-template-columns:minmax(0,1fr)}
+.detail .facts>div{display:grid;grid-template-columns:8rem minmax(0,1fr);align-items:baseline;gap:16px;padding:12px 0}
+.detail .facts>div+div{border-top:1px solid var(--outline-variant)}
+.detail .facts dt{font-size:.875rem}
+.detail .facts dd{margin:0;text-align:left;white-space:normal}
