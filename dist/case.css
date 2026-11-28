@@ -350,3 +350,6 @@ h3>.case-num{display:inline;margin:0 12px 0 0;font:inherit;font-weight:400;color
 .detail .facts>div+div{border-top:1px solid var(--outline-variant)}
 .detail .facts dt{font-size:.875rem}
 .detail .facts dd{margin:0;text-align:left;white-space:normal}
+/* Facts as a box, like the About sections */
+.detail .facts{border:1px solid var(--outline-variant);border-radius:var(--shape-xl);padding:4px 24px;max-width:640px}
+@media (max-width:599px){.detail .facts{padding:4px 20px}}
