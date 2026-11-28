@@ -309,3 +309,20 @@ main.page-in{animation:page-in 180ms var(--ease-standard,ease-out)}
   .aside-back{transform:translateY(8px);transition:opacity 400ms ease,transform 400ms ease,visibility 0s linear 400ms}
   body.is-detail.is-scrolled .aside-back{transition:opacity 400ms ease 200ms,transform 400ms ease 200ms,visibility 0s}
 }
+/* Apple-style local nav on detail pages: project name + menu replace the brand on scroll */
+.aside-back{display:none!important}
+.local-title,.local-nav{display:none}
+@media (min-width:840px){
+  body>header{position:sticky}
+  .local-title{display:block;position:absolute;left:var(--gutter-l);top:50%;transform:translateY(-30%);font-size:1.375rem;font-weight:700;letter-spacing:-.02em;white-space:nowrap;opacity:0;visibility:hidden;transition:opacity 400ms ease,transform 400ms ease,visibility 0s linear 400ms}
+  .local-nav{display:flex;gap:4px;margin-left:auto;opacity:0;visibility:hidden;transform:translateY(4px);transition:opacity 400ms ease,transform 400ms ease,visibility 0s linear 400ms}
+  .local-nav a{display:inline-flex;align-items:center;min-height:var(--target);padding:0 14px;border-radius:var(--shape-full);font:var(--label-l) var(--font);font-weight:700;color:var(--on-surface-variant)}
+  .local-nav a[aria-current]{background:var(--on-surface);color:var(--surface)}
+  body>header .brand,body>header>p{transition:opacity 400ms ease,transform 400ms ease,visibility 0s linear 0s}
+  body.is-detail.is-scrolled>header .brand,body.is-detail.is-scrolled>header>p{opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity 300ms ease,transform 300ms ease,visibility 0s linear 300ms}
+  body.is-detail.is-scrolled .local-title{opacity:1;visibility:visible;transform:translateY(-50%);transition:opacity 400ms ease 150ms,transform 400ms ease 150ms,visibility 0s}
+  body.is-detail.is-scrolled .local-nav{opacity:1;visibility:visible;transform:none;transition:opacity 400ms ease 150ms,transform 400ms ease 150ms,visibility 0s}
+}
+@media (min-width:840px) and (hover:hover){.local-nav a:not([aria-current]):hover{background:color-mix(in srgb,var(--on-surface) var(--state-hover),transparent);color:var(--on-surface)}}
+@media (prefers-reduced-motion:reduce){.local-title,.local-nav,body>header .brand,body>header>p{transition:none!important}}
+@media (min-width:840px){body>header .local-nav{flex-direction:row;flex-wrap:nowrap;gap:4px}}
