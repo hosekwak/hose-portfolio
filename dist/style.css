@@ -408,3 +408,8 @@ main.page-in{animation:page-in 180ms var(--ease-standard,ease-out)}
   .top-nav .mega li a{align-items:stretch;padding:10px;margin:0 -10px}
   .mega li a .mega-thumb+.mega-cat{margin-top:8px}
 }
+
+/* 스크롤 방향에 따라 상단바 숨김/표시 */
+body>header{transition:transform 260ms cubic-bezier(.2,0,0,1)}
+body.header-hidden>header{transform:translateY(-100%)}
+@media (prefers-reduced-motion:reduce){body>header{transition:none}}
