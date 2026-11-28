@@ -424,9 +424,8 @@ body::after{content:none!important}
 .about-stack .entry.award{grid-template-columns:5.5rem minmax(0,1fr);column-gap:16px}
 @media (max-width:599px){.about-stack .entry.award{grid-template-columns:minmax(0,1fr)}}
 
-/* Experience: 상자를 늘리는 대신 항목 간격을 벌려 왼쪽과 끝선 맞춤 */
+/* Experience는 Certifications와 같은 줄에, 끝선 맞춤 (상자 늘림 없음) */
 @media (min-width:1200px){
-  .about-columns>section:first-child{display:flex;flex-direction:column;justify-content:space-between}
-  .about-columns>section:first-child{justify-content:flex-start}
-  .about-columns>section:first-child>.entry+.entry{margin-top:auto}
+  .about-columns{grid-template-areas:"cert exp" "awards ."}
+  .about-columns>section:first-child{align-self:stretch}
 }
