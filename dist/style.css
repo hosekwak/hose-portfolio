@@ -413,3 +413,7 @@ main.page-in{animation:page-in 180ms var(--ease-standard,ease-out)}
 body>header{transition:transform 260ms cubic-bezier(.2,0,0,1)}
 body.header-hidden>header{transform:translateY(-100%)}
 @media (prefers-reduced-motion:reduce){body>header{transition:none}}
+
+/* 상단바 미리보기 제거 */
+.mega{display:none!important}
+body::after{content:none!important}
